@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "627d6d41-c9bf-45da-a2f9-58d9ff0b7188"
+      }
+    },
+    "android": {
+      "package": "com.yaku.newsapp"
+    }
+  }
+}
