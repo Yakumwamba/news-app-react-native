@@ -15,24 +15,24 @@ import bookmarkImage1 from "../static/bookmark1.png";
 import bookmarkImage2 from "../static/bookmark2.png";
 import Bookmark from "../components/bookmark";
 import SliderItem from "../components/slider-item";
+import PopularDestination from "../components/popularDestinationsCard";
 
 export default function HomeScreen({ navigation }) {
   return (
-    <ScrollView className="px-4 bg-white">
-      <View className="flex-1 pt-10 justify-start">
-        <View className="flex-1 flex-col pt-10 ">
-          <Text className="text-2xl font-semibold">Browse</Text>
-          <Text className="text-lg text-[#7C82A1]">
-            Discover things of this world
-          </Text>
-
-          {/* SearchBox */}
-          <View className="flex-1  mt-10  rounded-lg flex-row px-4  items-center justify-between bg-[#F3F4F6]  h-14 ">
+    <ScrollView className="px-4 bg-[#E3EAE8]">
+    <View className="flex-1 flex-col pt-10 justify-start ">
+      <View className="flex-1 flex-col pt-10  ">
+        <Text className="text-2xl font-semibold">Hi Kape</Text>
+        <Text className="text-3xl text-[#20463C]">
+        Where are you going?
+        </Text>
+         {/* SearchBox */}
+         <View className="flex-1  mt-10  rounded-xl flex-row px-4  items-center justify-between bg-[#F3F4F6]  h-14 ">
             <View className="flex-1 w-auto flex-row items-center h-56 justify-between ">
               <SearchIcon />
               <TextInput
                 placeholder="Search"
-                placeholderTextColor={"#7C82A1"}
+                placeholderTextColor={"#20463C"}
                 className="w-96 mx-2"
               ></TextInput>
             </View>
@@ -40,71 +40,26 @@ export default function HomeScreen({ navigation }) {
           </View>
           {/* SearchBox */}
 
-          <ScrollView horizontal className="pt-10 pb-10 gap-4">
-            <View className=" flex-1 items-center px-4 py-2 rounded-full bg-[#475AD7]">
-              <Text className="text-white font-bold">Random</Text>
-            </View>
-            <View className=" flex-1 items-center px-4 py-2 rounded-full bg-[#F3F4F6]">
-              <Text className="text-[#7C82A1] font-bold">Sports</Text>
-            </View>
-            <View className=" flex-1 items-center px-4 py-2 rounded-full bg-[#F3F4F6]">
-              <Text className="text-[#7C82A1] font-bold">Gaming</Text>
-            </View>
-            <View className=" flex-1 items-center px-4 py-2 rounded-full bg-[#F3F4F6]">
-              <Text className="text-[#7C82A1] font-bold">Politics</Text>
-            </View>
-            <View className=" flex-1 items-center px-4 py-2 rounded-full bg-[#F3F4F6]">
-              <Text className="text-[#7C82A1] font-bold">Politics</Text>
-            </View>
-            <View className=" flex-1 items-center px-4 py-2 rounded-full bg-[#F3F4F6]">
-              <Text className="text-[#7C82A1] font-bold">Finance</Text>
-            </View>
-          </ScrollView>
+        
+  </View>
+  
+  <View className=" w-full mt-10 h-auto">
+ 
 
-          {/* Images scrollview */}
-          <ScrollView
-            contentContainerStyle={{ alignItems: "center" }}
-            horizontal
-            className="flex-1"
-          >
-            <Pressable
-              onPress={() => {
-                navigation.navigate("HomeScreen2");
-              }}
-            >
-              <SliderItem image={image1} />
-            </Pressable>
+    
+        <Text className="text-2xl font-light text-[#20463C]">
+        Popular destination
+        </Text>
+      
+</View>
 
-            <Pressable
-              onPress={() => {
-                navigation.navigate("HomeScreen2");
-              }}
-            >
-              <SliderItem image={image2} />
-            </Pressable>
-          </ScrollView>
-        </View>
-      </View>
-      {/* Recommmendations */}
-      <View className="gap-1 my-5 flex-col">
-        <View className="flex-1 flex-row justify-between items-center my-10">
-          <Text className="text-[20px] font-semibold">Recommended for you</Text>
-          <Text>See All</Text>
-        </View>
-        {/* Bookmarks */}
 
-        <Bookmark
-          image={bookmarkImage1}
-          title={"UI/UX Design"}
-          description={"A Simple Trick For Creating Color Palettes Quickly"}
-        />
-        <Bookmark
-          image={bookmarkImage2}
-          title={"Art"}
-          description={"Six steps to creating a color palette"}
-        />
-      </View>
-    </ScrollView>
+  </View>
+<PopularDestination />
+<PopularDestination />
+<PopularDestination />
+<PopularDestination />
+  </ScrollView> 
   );
 }
 

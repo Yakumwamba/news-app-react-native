@@ -1,0 +1,11 @@
+export const PRIMARY = '#2D364C';
+export const PRIMARY_LIGHT = '#394359';
+export const PRIMARY_LIGHTER = '#C2CEEB';
+export const SECONDARY = '#3D5688';
+export const DANGER = '#E43E3E';
+export const SUCCESS = '#329E6A';
+export const GRAY = '#DEDEDE';
+export const GRAY_DARK = '#B0B0B0';
+export const GRAY_LIGHT = '#F2F2F2';
+export const WHITE = '#FFFFFF';
+export const BLACK = '#000';

@@ -7,6 +7,9 @@ module.exports = {
         'image-one':  "./static/image4.png"
       }
     },
+    colors: {
+      PrimaryGreen: ""
+    }
   },
   plugins: [],
 };
