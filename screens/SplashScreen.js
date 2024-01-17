@@ -6,21 +6,15 @@ import {
     ImageBackground,
     StyleSheet,
     Pressable,
+    Image
   } from "react-native";
-  import SearchIcon from "../icons/search-icon";
-  import MicrophoneIcon from "../icons/microphone-icon";
-  import image1 from "../static/image1.png";
-  import image2 from "../static/image3.png";
-  import bookmarkImage1 from "../static/bookmark1.png";
-  import bookmarkImage2 from "../static/bookmark2.png";
-  import Bookmark from "../components/bookmark";
-  import SliderItem from "../components/slider-item";
-  import PopularDestination from "../components/popularDestinationsCard";
-  
+
+// import BusLogo from "../icons/bus-logo";
+// import logo from '../static/logo.png'
   export default function SplashScreen({ navigation }) {
     return (
-<View classname="flex-1  bg-[#72BBA8] h-screen w-full" >
-     
+<View classname="flex items-center bg-accent h-full w-full" >
+   {/* <Image  source={logo} height={100} width={100} alt="" /> */}
 </View>
     );
   }

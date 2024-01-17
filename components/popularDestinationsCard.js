@@ -1,11 +1,14 @@
-import { View, Text, ImageBackground, StyleSheet } from "react-native";
+import { View, Text, ImageBackground,TouchableNativeFeedback, StyleSheet } from "react-native";
 
-export default function PopularDestination({ image, title, description }) {
+export default function PopularDestination({ navigation ,image, title, description }) {
   return (
-    <View className="w-full my-2 h-auto bg-[#BFD7D0]">
+
+
+  
+    <View className="w-full my-1 h-auto bg-[#BFD7D0] border-[#20463C] border-opacity-5 border-b-2 drop-shadow-md ">
     <View className="flex-1 flex-col p-5 h-auto w-full">
       <View className="flex-1 flex-row justify-between">
-      <Text className=" font-bold  text-lg text-[#20463C]">
+      <Text className=" font-bold  text-3xl text-[rgb(32,70,60)]">
       Kabwe
         </Text>
         <Text className=" font-semibold  text-lg text-[#20463C]">
@@ -40,6 +43,7 @@ export default function PopularDestination({ image, title, description }) {
       </View>
     </View>
 </View>
+
   );
 }
 

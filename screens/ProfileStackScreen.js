@@ -3,6 +3,9 @@ import SignUpScreen from "./SignUpScreen";
 import ChangePassword from "./ChangePassword";
 import SignInScreen from "./SignInScreen";
 import ProfileScreen from "./ProfileScreen";
+import VerifyScreen from "./VerifyScreen";
+
+
 
 const ProfileStack = createNativeStackNavigator();
 
@@ -12,12 +15,16 @@ export default function ProfileStackScreen() {
       screenOptions={{
         headerShown: false,
         navigationBarHidden: true,
+        
       }}
     >
-      <ProfileStack.Screen name="Profile" component={ProfileScreen} />
+      <ProfileStack.Screen  name="ProfileScreen" component={ProfileScreen} />
       <ProfileStack.Screen name="SignUp" component={SignUpScreen} />
-      <ProfileStack.Screen name="SignIn" component={SignInScreen} />
+      <ProfileStack.Screen name="SignIn" 
+        component={SignInScreen}  
+      />
       <ProfileStack.Screen name="ChangePass" component={ChangePassword} />
+      <ProfileStack.Screen name="VerifyCode" component={VerifyScreen} />
     </ProfileStack.Navigator>
   );
 }

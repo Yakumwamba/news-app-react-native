@@ -202,7 +202,7 @@ export const loginUserWithToken = token => async dispatch => {
 export const loginUser = data => dispatch => {
   dispatch(requestLogin());
   fetchRequest({
-    url: 'api/v1/users/login/',
+    url: 'api/v1/users/send-code/',
     method: 'POST',
     data,
   })(requestLoginSuccess)(requestLoginFailed)(dispatch);
@@ -240,7 +240,6 @@ export const resetPasswordCodeVerify = data => dispatch => {
 
 export const newPasswordRequest = data => dispatch => {
   dispatch(requesting());
-  console.log('THIS IS THE RESET PASSWORD');
   fetchRequest({
     url: 'api/v1/users/password-reset/',
     method: 'POST',

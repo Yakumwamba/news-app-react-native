@@ -1,11 +1,12 @@
 import { scale } from 'react-native-size-matters';
 import { GRAY, WHITE, PRIMARY } from '../theme/styles/colors';
 
-let BASE_URL = 'https://tiji-dev.herokuapp.com'; //'https://tiji-dev.herokuapp.com';
+let BASE_URL = 'https://b272-45-215-114-98.ngrok-free.app'
+// 'https://727b-102-151-168-84.ngrok-free.app'; //'https://tiji-dev.herokuapp.com';
 // let BASE_URL = 'http://45.215.255.114:8000'; //'https://tiji-dev.herokuapp.com';
 
 if (__DEV__) {
-  BASE_URL = 'http://10.0.2.2:8000';
+  BASE_URL = 'http://10.0.2.2:8000' // 'https://727b-102-151-168-84.ngrok-free.app';
   // BASE_URL = 'http://10.0.2.2:8000';
 }
 

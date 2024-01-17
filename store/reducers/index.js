@@ -11,11 +11,16 @@ import busReducer, {
   STATE_KEY as BUS_REDUCER,
 } from '../reducers/busReducer';
 
+import locationReducer, {
+  STATE_KEY as LOCATION_STATE_KEY,
+} from '../reducers/locationReducer';
+
+
 const rootReducer = combineReducers({
   [USER_STATE_KEY]: userReducer,
   [PAYMENT_REDUCER]: paymentReducer,
   [BUS_REDUCER]: busReducer,
-//   [LOCATION_STATE_KEY]: locationReducer,
+  [LOCATION_STATE_KEY]: locationReducer,
 //   [BOOKED_TICKET_STATE_KEY]: bookedTicketReducer,
 //   [USER_JOURNEY_REDUCER]: userJourneyReducer,
 //   [DOWNLOAD_REDUCER]: downloadReducer,
